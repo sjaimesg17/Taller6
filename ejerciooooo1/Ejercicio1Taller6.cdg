@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Taller6Herencia">
+  <ClassDiagramComponents>
+    <Class name="Futbolista" package="" visibility="public" xPosition="40.0" yPosition="264.0">
+      <Fields>
+        <Field name="Dorsal" type="Integer" visibility="private"/>
+        <Field name="Demarcacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="JugarPartido" returnType="void" visibility="public"/>
+        <Method name="Entrenar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Entrenador" package="" visibility="public" xPosition="250.0" yPosition="269.0">
+      <Fields>
+        <Field name="idFederacion" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="dirigirPartido" returnType="void" visibility="public"/>
+        <Method name="dirigirEntrenamiento" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Masajista" package="" visibility="public" xPosition="471.0" yPosition="264.0">
+      <Fields>
+        <Field name="Titulacion" type="String" visibility="private"/>
+        <Field name="aniosExp" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="darMasaje" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="Persona" package="" visibility="public" xPosition="250.0" yPosition="11.0">
+      <Fields>
+        <Field name="Id" type="Integer" visibility="private"/>
+        <Field name="Nombre" type="String" visibility="private"/>
+        <Field name="Apellidos" type="String" visibility="private"/>
+        <Field name="Edad" type="Integer" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Concentrarse" returnType="void" visibility="public"/>
+        <Method name="Viajar" returnType="void" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Entrenador" target="Persona"/>
+    <IsRelation name="is" source="Futbolista" target="Persona"/>
+    <IsRelation name="is" source="Masajista" target="Persona"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
